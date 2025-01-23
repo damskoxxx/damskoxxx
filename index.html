@@ -64,6 +64,42 @@
             height: auto;
             display: block;
         }
+        .action-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .action-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .action-card:hover {
+            transform: scale(1.05);
+        }
+        .action-card h3 {
+            color: #d22d2d;
+            margin-bottom: 10px;
+        }
+        .action-card a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #d22d2d;
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .action-card a:hover {
+            background-color: #a11e1e;
+        }
     </style>
 </head>
 <body>
@@ -73,31 +109,26 @@
 
     <div class="content">
         <div class="section">
-            <h2>What is Damsko XXX?</h2>
-            <p>Damsko XXX is a unique cryptocurrency inspired by the iconic energy and culture of Amsterdam. Featuring the legendary triple Andreas crosses (XXX), it represents the city’s strength, resilience, and unmistakable charm.</p>
-        </div>
-
-        <div class="section">
-            <h2>Why Damsko XXX?</h2>
-            <ul>
-                <li>Celebrate Amsterdam’s rich heritage and urban flair.</li>
-                <li>Be part of a vibrant community with a shared love for humor and innovation.</li>
-                <li>Invest in a MemeCoin that’s as bold and unforgettable as the city itself.</li>
-            </ul>
-        </div>
-
-        <div class="section">
             <h2>Join the Revolution</h2>
             <p>Don’t miss out on the chance to be part of the Damsko XXX journey. Join us as we bring Amsterdam’s spirit to the blockchain and beyond!</p>
-            <p><a href="https://pancakeswap.finance/?outputCurrency=0x7908eE875AA8e4F7f7b329Ad4312F37913959897" target="_blank">Trade on Pancake Swap (not active yet) </a></p>
-            <p><a href="https://www.pink.meme/token/bsc/0x7908ee875aa8e4f7f7b329ad4312f37913959897" target="_blank">Buy in Presale on Pink.meme ! </a></p>
-            <p><a href="https://t.me/Damsko_XXX_Token" target="_blank">Telegran channel https://t.me/Damsko_XXX_Token </a></p>
-        
-        </div>
 
-        <div class="section">
-            <p align=center><img src="damskoxxx.jpg"></img></p>
-            <br><br>
+            <div class="action-cards">
+                <div class="action-card">
+                    <h3>Trade on PancakeSwap</h3>
+                    <p>Not active yet, but stay tuned!</p>
+                    <a href="https://pancakeswap.finance/?outputCurrency=0x7908eE875AA8e4F7f7b329Ad4312F37913959897" target="_blank">Trade Now</a>
+                </div>
+                <div class="action-card">
+                    <h3>Buy on Pink.Meme</h3>
+                    <p>Get your tokens in the presale now!</p>
+                    <a href="https://www.pink.meme/token/bsc/0x7908ee875aa8e4f7f7b329ad4312f37913959897" target="_blank">Buy in Presale</a>
+                </div>
+                <div class="action-card">
+                    <h3>Join Our Telegram</h3>
+                    <p>Connect with the community.</p>
+                    <a href="https://t.me/Damsko_XXX_Token" target="_blank">Join Telegram</a>
+                </div>
+            </div>
         </div>
     </div>
 
